@@ -1,148 +1,35 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kaiser Hub</title>
-    <style>
-        @keyframes neonGlow {
-            0% { filter: brightness(1); }
-            50% { filter: brightness(1.5); }
-            100% { filter: brightness(1); }
-        }
-
-        body {
-            font-family: Arial, sans-serif;
-            background: radial-gradient(circle, #440088, #000000);
-            color: white;
-            text-align: center;
-            margin: 0;
-            padding: 0;
-        }
-
-        header {
-            background: linear-gradient(90deg, #ff0000, #ff7300, #ffeb00, #47ff00, #00ffff, #2400ff, #ff00ff);
-            background-size: 400% 400%;
-            animation: neonGlow 2s infinite alternate;
-            color: white;
-            font-size: 24px;
-            text-shadow: 0 0 10px #fff, 0 0 20px #ff00ff, 0 0 30px #00ffff;
-            padding: 20px;
-        }
-
-        .search-box {
-            margin: 20px auto;
-            max-width: 400px;
-        }
-
-        input {
-            width: 80%;
-            padding: 12px;
-            font-size: 16px;
-            border: 2px solid #ff00ff;
-            border-radius: 25px;
-            text-align: center;
-            outline: none;
-            background-color: black;
-            color: white;
-            box-shadow: 0 0 15px #ff00ff;
-        }
-
-        input:focus {
-            border-color: #ffff00;
-            box-shadow: 0 0 20px #ffff00;
-        }
-
-        .container {
-            margin-top: 30px;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 20px;
-        }
-
-        .script-card {
-            width: 290px;
-            height: 220px;
-            background: linear-gradient(45deg, #ff0000, #ff7300, #ffeb00, #47ff00, #00ffff, #2400ff, #ff00ff);
-            background-size: 400% 400%;
-            animation: neonGlow 2s infinite alternate;
-            border-radius: 15px;
-            box-shadow: 0px 0px 20px white;
-            text-align: center;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .script-card img {
-            width: 100px;
-            height: 100px;
-            border-radius: 10px;
-            box-shadow: 0 0 15px white;
-        }
-
-        .script-name {
-            font-size: 18px; /* Tăng kích thước chữ */
-            font-weight: bold; /* In đậm */
-            color: black; /* Chuyển thành màu đen */
-            margin: 10px 0;
-        }
-
-        .btn {
-            background: linear-gradient(45deg, #ff00ff, #00ffff);
-            color: white;
-            padding: 10px 15px;
-            border-radius: 25px;
-            text-decoration: none;
-            font-weight: bold;
-            box-shadow: 0 0 10px white;
-        }
-
-        .btn:hover {
-            background: linear-gradient(45deg, #ffff00, #ff0000);
-            box-shadow: 0 0 20px #ffff00;
-        }
-    </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>ฟรีไม่มีค่าใช้จ่ายชื่อโดเมน</title>
 </head>
 <body>
-    <header>Kaiser Hub</header>
+<body style="background-color: lightblue;"></body>
 
-    <div class="search-box">
-        <input type="text" id="search-input" placeholder="🔎 Tìm Kiếm Game..." onkeyup="searchScript()">
-    </div>
+<label style="font-size:24px;color:black;background-color:white;border-radius:10px;width:300px;transform: translate(-50%, -0%);height:50px;position:absolute;top:10px;left:50%;text-align:center;line-height:50px; ">Free Domain</label>
 
-    <div class="container" id="script-list">
+<div style="border-radius:10px;width:300px;height:300px;background-color: white;position:absolute;top:45px;left:50%;transform: translate(-50%, -0%);"></div>
 
-<div class="script-card">
-        <img class="logo" src="https://i.imgur.com/2YjJsZL.jpeg" alt="Logo">
-            <div class="script-name">Blox Fruit</div>
-            <a class="btn" href="https://zyrooi.github.io/BloxFruit.html" target="_blank">Truy Cập</a>
+<input type="text" placeholder="Enter Your Domain..." style="width:280px;height:40px;border-radius:10px;border:2px solid #007bff;font-size:16px;color:#333;font-weight:bold;position:absolute;top:60px;left:50%;transform: translate(-50%, -0%);">
+
+<input type="text" placeholder="Ip Hosting..." style="width:280px;height:40px;border-radius:10px;border:2px solid #007bff;font-size:16px;color:#333;font-weight:bold;position:absolute;top:160px;left:50%;transform: translate(-50%, -0%);">
+
+<select style="width:288px;height:45px;border-radius:10px;border:2px solid #007bff;background-color:#white;color:black;font-size:16px;transform: translate(-50%, -0%);font-weight:bold;position:absolute;top:110px;left:50%;">
+  <option value="option1">.net</option>
+  <option value="option2">.com</option>
+  
+</select>
+<button onclick="alert('Error domain')" style="background:#007bff;color:white;border:none;font-size:16px;width:150px;height:40px;border-radius:10px;font-weight:bold;position:absolute;top:260px;left:50%;transform: translate(-50%, -0%);">Get Domain</button>
 </div>
-        <div class="script-card">
-        <img class="logo" src="https://i.imgur.com/He1j0PV.jpeg" alt="Logo">
-            <div class="script-name">Meme Sea</div>
-            <a class="btn" href="https://zyrooi.github.io/memesea.html" target="_blank">Truy Cập</a>
-        </div>
-        <div class="script-card">
-        <img class="logo" src="https://i.imgur.com/K0VgYB8.jpeg" alt="Logo">
-            <div class="script-name">Anime Defenders</div>
-            <a class="btn" href="https://zyrooi.github.io/anime-defense.html" target="_blank">Truy Cập</a>
-        </div>
-     
-    </div>
 
-    <script>
-        function searchScript() {
-            let input = document.getElementById("search-input").value.toLowerCase();
-            let cards = document.getElementsByClassName("script-card");
+<div style="border-radius:10px;width:300px;height:100px;background-color:white;position:absolute;top:350px;left:50%;transform: translate(-50%, -0%);">
 
-            for (let card of cards) {
-                let text = card.innerText.toLowerCase();
-                card.style.display = text.includes(input) ? "block" : "none";
-            }
-        }
-    </script>
+<button onclick="window.location.href='sharecode';" style="background-color:#007bff;color:white;border:none;font-size:16px;width:170px;height:40px;border-radius:10px;font-weight:bold;position:absolute;top:10px;left:50%;transform: translate(-50%, -0%);">Share Code Website</button>
+
+</div>
+
+
 </body>
 </html>
