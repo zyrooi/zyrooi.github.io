@@ -54,6 +54,7 @@
       color: inherit;
       display: flex;
       flex-direction: column;
+      margin-bottom: 20px;
     }
 
     .news-card:hover {
@@ -88,18 +89,40 @@
       margin-top: 10px;
     }
 
+    .next-button-frame {
+      background: white;
+      border-radius: 12px;
+      padding: 16px;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      margin-top: 40px;
+    }
+
+    .next-button-frame a {
+      display: inline-block;
+      background-color: #004e98;
+      color: white;
+      padding: 12px 24px;
+      font-size: 16px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .next-button-frame a:hover {
+      opacity: 0.9;
+    }
   </style>
 </head>
 <body>
   <header>Share Hack</header>
 
-  
   <div class="search-bar">
     <input type="text" id="searchInput" placeholder="Tìm Hack, Script">
   </div>
 
   <div class="news-container">
-    
     <a href="https://zyrooi.github.io/client-mod" class="news-card">
       <img src="https://i.imgur.com/G816Krm.jpeg" alt="Ảnh bài viết demo">
       <div class="news-content">
@@ -108,6 +131,7 @@
         <div class="news-date">16/04/2025</div>
       </div>
     </a>
+
     <a href="https://zyrooi.github.io/script-bloxfruit" class="news-card">
       <img src="https://i.imgur.com/x23lHhE.jpeg" alt="Ảnh bài viết demo">
       <div class="news-content">
@@ -116,8 +140,12 @@
         <div class="news-date">16/04/2025</div>
       </div>
     </a>
-  </div>
 
+    <!-- Frame chứa nút chuyển trang -->
+    <div class="next-button-frame">
+      <a href="trang2.html">Trang Tiếp Theo</a>
+    </div>
+  </div>
 
   <script>
     const searchInput = document.getElementById("searchInput");
