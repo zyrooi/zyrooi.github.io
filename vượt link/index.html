@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Share Hack Game</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Segoe UI", sans-serif;
+      background-color: #f2f2f2;
+    }
+
+    header {
+      background-color: #004e98;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      font-size: 26px;
+      font-weight: bold;
+    }
+
+    .search-bar {
+      max-width: 600px;
+      margin: 20px auto 0;
+      padding: 0 20px;
+    }
+
+    .search-bar input {
+      width: 100%;
+      padding: 12px 16px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      font-size: 16px;
+    }
+
+    .news-container {
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+
+    .news-card {
+      background-color: white;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: 0.3s;
+      text-decoration: none;
+      color: inherit;
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 20px;
+    }
+
+    .news-card:hover {
+      transform: translateY(-4px);
+    }
+
+    .news-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .news-content {
+      padding: 16px;
+    }
+
+    .news-title {
+      font-size: 20px;
+      font-weight: bold;
+      margin: 0 0 10px;
+    }
+
+    .news-desc {
+      font-size: 15px;
+      color: #555;
+    }
+
+    .news-date {
+      font-size: 13px;
+      color: #999;
+      text-align: right;
+      margin-top: 10px;
+    }
+
+    .next-button-frame {
+      background: white;
+      border-radius: 12px;
+      padding: 16px;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      margin-top: 40px;
+    }
+
+    .next-button-frame a {
+      display: inline-block;
+      background-color: #004e98;
+      color: white;
+      padding: 12px 24px;
+      font-size: 16px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .next-button-frame a:hover {
+      opacity: 0.9;
+    }
+
+    .copyright {
+      font-size: 14px;
+      color: #666;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>Share Hack</header>
+
+  <div class="search-bar">
+    <input type="text" id="searchInput" placeholder="Tìm Hack, Script">
+  </div>
+
+  <div class="news-container">
+    <a href="https://yeumoney.com/QelZ2x5Ro" class="news-card">
+      <img src="https://i.imgur.com/G816Krm.jpeg" alt="Ảnh bài viết demo">
+      <div class="news-content">
+        <div class="news-title">Link Yeumoney.com</div>
+        <div class="news-desc">Bypass Link To Get Key or link: https://yeumoney.com/QelZ2x5Ro</div>
+        <div class="news-date">16/04/2025</div>
+      </div>
+    </a>
+
+    <div class="next-button-frame">
+      <a href="trang2.html">Trang Tiếp Theo</a>
+      <div class="copyright">Bản Quyền Thuộc Về: Kiettrumhtml</div>
+    </div>
+  </div>
+
+  <script>
+    const searchInput = document.getElementById("searchInput");
+    const cards = document.querySelectorAll(".news-card");
+
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+
+      cards.forEach(card => {
+        const title = card.querySelector(".news-title").textContent.toLowerCase();
+        const desc = card.querySelector(".news-desc").textContent.toLowerCase();
+
+        if (title.includes(keyword) || desc.includes(keyword)) {
+          card.style.display = "flex";
+        } else {
+          card.style.display = "none";
+        }
+      });
+    });
+  </script>
+</body>
+</html>
